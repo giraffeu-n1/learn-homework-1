@@ -22,7 +22,7 @@ def main():
     def user_action(user_age):
         if user_age > 1 and user_age < 7:
             return 'Отправляйтесь в детский сад'
-        if user_age >=7 and user_age < 18:
+        if user_age >= 7 and user_age < 18:
             return 'Вас ждут в школе'
         if user_age >= 18 and user_age < 24:
             return 'Высшее образование нужно получить'
