@@ -28,7 +28,6 @@ def ask_user(answers_dict):
         for r in qa:
             if user_question == r['question']:
                 print(f"{r['answer']}")
-        break
 
 if __name__ == "__main__":
     ask_user(qa)

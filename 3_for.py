@@ -40,10 +40,11 @@ def main():
         product_sold_avg = count_average(one_product['items_sold'])
         print(f'Среднее количество продаж для {one_product['product']}: {product_sold_avg}')
   product_sold_sum = 0
-  product_sold_avg = 0
+  product_count = 0
   for one_product in phones:
         product_sold_sum += count_summa(one_product['items_sold'])
-        product_sold_avg += count_summa(one_product['items_sold'])/len(phones)
+        product_count += len(one_product.get('items_sold', 0))
+  product_sold_avg = product_sold_sum/product_count
   print(f'Суммарное количество продаж: {product_sold_sum}')
   print(f'Среднее количество продаж: {product_sold_avg}')
 

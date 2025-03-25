@@ -29,9 +29,9 @@ def main():
             return 0
         if str1 == str2:
             return 1
-        if str1 != str2 and str1_len > str2_len:
+        if str1_len > str2_len:
             return 2
-        if str1 != str2 and str2 == 'learn':
+        if str2 == 'learn':
             return 3
     print(two_strings('moscow python',3))
     print(two_strings('moscow python','moscow python'))
